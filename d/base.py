@@ -3,7 +3,7 @@ import markdown
 from pyquery import PyQuery as pq
 
 j = os.path.join
-md = markdown.Markdown(extensions=['toc', 'codehilite'])
+md = markdown.Markdown(extensions=['toc', 'codehilite', 'tables'])
 up = lambda p: j(*os.path.split(p)[:-1])
 dirname = lambda p: os.path.basename(os.path.abspath(p))
 
