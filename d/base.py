@@ -9,13 +9,12 @@ dirname = lambda p: os.path.basename(os.path.abspath(p))
 
 extensions = ['md', 'mdown', 'markdown']
 
-INDEX_PRE = '''\
+INDEX_PRE = u'''\
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
         <title>{title_tag}</title>
-        <link rel="stylesheet" href="./_dmedia/bootstrap.css"/>
         <link rel="stylesheet" href="./_dmedia/tango.css"/>
         <link rel="stylesheet/less" type="text/css" href="./_dmedia/style.less">
         <script src="./_dmedia/less.js" type="text/javascript">
@@ -26,13 +25,12 @@ INDEX_PRE = '''\
             <header><h1><a href="">{project_title}</a></h1></header>
                 <div class="markdown">
 '''
-CONTENT_PRE = '''\
+CONTENT_PRE = u'''\
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
         <title>{title_tag}</title>
-        <link rel="stylesheet" href="../_dmedia/bootstrap.css"/>
         <link rel="stylesheet" href="../_dmedia/tango.css"/>
         <link rel="stylesheet/less" type="text/css" href="../_dmedia/style.less">
         <script src="../_dmedia/less.js" type="text/javascript">
@@ -43,7 +41,7 @@ CONTENT_PRE = '''\
             <header><h1><a href="..">{project_title}</a></h1></header>
                 <div class="markdown">
 '''
-POST = '''
+POST = u'''
                 </div>
             <footer>{footer}</footer>
         </div>
